@@ -46,6 +46,7 @@
       "-f",
       "{filename}"
     ],
+  },
 
   "compatibility": {
     "systems": ["Windows"],
