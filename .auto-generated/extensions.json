@@ -855,7 +855,7 @@
         "discord": "alynva",
         "twitter": "Alynva",
         "extensionsCount": 4,
-        "reputation": 690
+        "reputation": 710
       }
     ],
     "version": "1.0.0",
@@ -1293,7 +1293,7 @@
         "discord": "Alynva#0001",
         "twitter": "Alynva",
         "extensionsCount": 4,
-        "reputation": 690
+        "reputation": 710
       }
     ],
     "version": "0.1",
@@ -1339,7 +1339,7 @@
     "submissionDate": "07-09-2022 02:37:00",
     "updateDate": "07-09-2022 02:37:00",
     "isOutdated": false,
-    "rating": 190
+    "rating": 210
   },
   {
     "title": "G-Loader",
@@ -1576,7 +1576,7 @@
         "discord": "Alynva#1713",
         "twitter": "alynva",
         "extensionsCount": 4,
-        "reputation": 690
+        "reputation": 710
       }
     ],
     "version": "1.4.0",
@@ -1630,7 +1630,7 @@
         "discord": "alynva",
         "twitter": "Alynva",
         "extensionsCount": 4,
-        "reputation": 690
+        "reputation": 710
       }
     ],
     "version": "1.0.1",
@@ -1951,7 +1951,7 @@
         "name": "QDave",
         "discord": "qdave",
         "extensionsCount": 2,
-        "reputation": 685
+        "reputation": 705
       }
     ],
     "version": "1.4",
@@ -2310,7 +2310,7 @@
         "name": "QDave",
         "discord": "qdave",
         "extensionsCount": 2,
-        "reputation": 685
+        "reputation": 705
       }
     ],
     "version": "1.0",
@@ -2365,7 +2365,7 @@
     "submissionDate": "29-07-2024 00:36:00",
     "updateDate": "29-07-2024 00:36:00",
     "isOutdated": false,
-    "rating": 150
+    "rating": 170
   },
   {
     "title": "Handitem Chooser",
@@ -4478,10 +4478,10 @@
         "username": "JTD",
         "discord": "jtd420",
         "extensionsCount": 1,
-        "reputation": 110
+        "reputation": 295
       }
     ],
-    "version": "1.0.0",
+    "version": "2.0.0",
     "categories": [
       "Usability"
     ],
@@ -4515,48 +4515,20 @@
         "{port}",
         "-f",
         "{filename}"
-      ],
-      "mac": [
-        "chmod",
-        "+x",
-        "Gamba-Suite-mac",
-        "&&",
-        "./Gamba-Suite-mac",
-        "-c",
-        "{cookie}",
-        "-p",
-        "{port}",
-        "-f",
-        "{filename}"
-      ],
-      "linux": [
-        "chmod",
-        "+x",
-        "Gamba-Suite-linux",
-        "&&",
-        "./Gamba-Suite-linux",
-        "-c",
-        "{cookie}",
-        "-p",
-        "{port}",
-        "-f",
-        "{filename}"
       ]
     },
     "compatibility": {
       "systems": [
-        "Windows",
-        "Mac",
-        "Linux"
+        "Windows"
       ],
       "clients": [
         "Origins"
       ]
     },
     "submissionDate": "29-08-2024 23:55:00",
-    "updateDate": "29-08-2024 23:55:00",
+    "updateDate": "02-09-2024 01:23:00",
     "isOutdated": false,
-    "rating": 110
+    "rating": 295
   },
   {
     "title": "autoclick",
