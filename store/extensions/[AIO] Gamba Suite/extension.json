@@ -9,7 +9,7 @@
       "discord": "jtd420"
     }
   ],
-  "version": "2.0.0",
+  "version": "2.0.1",
   "categories": ["Usability"],
 
   "source": "https://github.com/JTD420/Gamba-Suite/tree/main",
@@ -54,6 +54,6 @@
   },
 
   "submissionDate": "29-08-2024 23:55:00",
-  "updateDate": "02-09-2024 01:23:00",
+  "updateDate": "27-09-2024 18:36:00",
   "isOutdated": false
 }
