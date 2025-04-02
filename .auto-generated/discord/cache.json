@@ -1904,60 +1904,82 @@
         "type": "publish",
         "timestamp": 1630599737545,
         "locked": false,
-        "score": 280
+        "score": 300
       }
     ],
     "latestEmbed": 1630599737545
   },
   {
     "title": "xabbo",
-    "version": "1.0.3",
+    "version": "1.1.3",
     "_object": {
       "title": "xabbo",
-      "description": "enhanced habbo",
+      "description": "enhanced habbo\n\nrequires the .NET 8 Runtime",
       "authors": [
         {
           "name": "b7",
-          "hotel": ".com",
-          "username": "1b7",
-          "discord": "b7#8571"
+          "discord": "xb7c"
         }
       ],
-      "version": "1.0.3",
+      "version": "1.1.3",
       "categories": [
         "Usability"
       ],
-      "source": "https://github.com/b7c/b7.Xabbo",
-      "readme": "https://github.com/b7c/b7.Xabbo/blob/master/README.md",
+      "source": "https://github.com/xabbo/xabbo",
+      "readme": "https://github.com/xabbo/xabbo/blob/main/README.md",
       "stable": true,
       "framework": {
         "name": "Xabbo",
-        "version": "1.0.0-beta.2"
+        "version": "1.0.1"
       },
       "language": "C#",
       "commands": {
         "default": [
           "cmd",
           "/C",
-          "b7.Xabbo.exe",
+          "xabbo.exe",
           "-c",
           "{cookie}",
           "-p",
           "{port}",
           "-f",
+          "{filename}",
+          ">",
+          "NUL",
+          "2>&1"
+        ],
+        "linux": [
+          "/bin/sh",
+          "-c",
+          "chmod +x xabbo-linux-x64 && ./xabbo-linux-x64 -p \"$1\" -c \"$2\" -f \"$3\" >& /dev/null",
+          "--",
+          "{port}",
+          "{cookie}",
+          "{filename}"
+        ],
+        "mac": [
+          "/bin/sh",
+          "-c",
+          "chmod +x xabbo-osx && ./xabbo-osx -p \"$1\" -c \"$2\" -f \"$3\" >& /dev/null",
+          "--",
+          "{port}",
+          "{cookie}",
           "{filename}"
         ]
       },
       "compatibility": {
         "systems": [
-          "Windows"
+          "Windows",
+          "Linux",
+          "Mac"
         ],
         "clients": [
-          "Flash"
+          "Flash",
+          "Origins"
         ]
       },
       "submissionDate": "04-09-2021 07:23:00",
-      "updateDate": "07-01-2022 05:04:00",
+      "updateDate": "20-11-2024 21:02:17",
       "isOutdated": false
     },
     "discordMessages": [
@@ -2000,9 +2022,29 @@
         "timestamp": 1641551835263,
         "locked": false,
         "score": 100
+      },
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1302286314963603497",
+        "extVersion": "1.1.1",
+        "type": "update",
+        "timestamp": 1730559653064,
+        "locked": false,
+        "score": 150
+      },
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1308904239841673256",
+        "extVersion": "1.1.3",
+        "type": "update",
+        "timestamp": 1732137489412,
+        "locked": false,
+        "score": 50
       }
     ],
-    "latestEmbed": 1641517421533
+    "latestEmbed": 1732137489412
   },
   {
     "title": "LTDHelper",
@@ -2078,7 +2120,7 @@
   },
   {
     "title": "G-Presets - Building & Wired Presets",
-    "version": "1.1.1",
+    "version": "1.2.2",
     "_object": {
       "title": "G-Presets - Building & Wired Presets",
       "description": "Save and reuse wired and non-wired setups",
@@ -2089,9 +2131,15 @@
           "username": "sirjonasxx-VII",
           "discord": "sirjonasxx",
           "twitter": "sirjonasxx"
+        },
+        {
+          "name": "Roboroads",
+          "hotel": ".nl",
+          "username": "Roboroads",
+          "discord": "roboroads"
         }
       ],
-      "version": "1.1.1",
+      "version": "1.2.2",
       "categories": [
         "Building",
         "Usability"
@@ -2129,7 +2177,7 @@
         ]
       },
       "submissionDate": "19-09-2021 23:54:00",
-      "updateDate": "04-02-2024 00:31:00",
+      "updateDate": "26-01-2025 20:57:00",
       "isOutdated": false
     },
     "discordMessages": [
@@ -2242,9 +2290,39 @@
         "timestamp": 1707003270586,
         "locked": false,
         "score": 50
+      },
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1324407516788031530",
+        "extVersion": "1.2",
+        "type": "update",
+        "timestamp": 1735833758701,
+        "locked": false,
+        "score": 125
+      },
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1324427015201361960",
+        "extVersion": "1.2.1",
+        "type": "update",
+        "timestamp": 1735838407586,
+        "locked": false,
+        "score": 175
+      },
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1333164868584341505",
+        "extVersion": "1.2.2",
+        "type": "update",
+        "timestamp": 1737921674137,
+        "locked": false,
+        "score": 125
       }
     ],
-    "latestEmbed": 1707003270586
+    "latestEmbed": 1737921674137
   },
   {
     "title": "Rainbow BackGround",
@@ -5947,7 +6025,7 @@
   },
   {
     "title": "Talk To Shout Origins",
-    "version": "1.1.1",
+    "version": "1.2",
     "_object": {
       "title": "Talk To Shout Origins",
       "description": "Talk to shout, Shout to Talk, switch the functions with eachother",
@@ -5957,9 +6035,12 @@
           "hotel": ".com",
           "username": "3duard",
           "discord": "@eduard"
+        },
+        {
+          "name": "b7"
         }
       ],
-      "version": "1.1.1",
+      "version": "1.2",
       "categories": [
         "Usability"
       ],
@@ -5968,7 +6049,7 @@
       "stable": true,
       "framework": {
         "name": "GoEarth",
-        "version": "0.1.6"
+        "version": "0.4.0"
       },
       "language": "Go",
       "commands": {
@@ -6032,7 +6113,7 @@
         ]
       },
       "submissionDate": "26-06-2024 02:40:00",
-      "updateDate": "02-07-2024 01:33:00",
+      "updateDate": "15-09-2024 02:40:00",
       "isOutdated": false
     },
     "discordMessages": [
@@ -6065,9 +6146,19 @@
         "timestamp": 1719880415137,
         "locked": false,
         "score": 50
+      },
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1300783114867445790",
+        "extVersion": "1.2",
+        "type": "update",
+        "timestamp": 1730201262348,
+        "locked": false,
+        "score": 0
       }
     ],
-    "latestEmbed": 1719793091624
+    "latestEmbed": 1730201262348
   },
   {
     "title": "StickiesArt",
@@ -7551,7 +7642,7 @@
         "type": "publish",
         "timestamp": 1722278767504,
         "locked": false,
-        "score": 160
+        "score": 180
       }
     ],
     "latestEmbed": 1722278767504
@@ -7637,9 +7728,355 @@
         "type": "update",
         "timestamp": 1725391164219,
         "locked": false,
-        "score": 175
+        "score": 225
       }
     ],
     "latestEmbed": 1725391164219
+  },
+  {
+    "title": "Trade Tracker",
+    "version": "2.0",
+    "_object": {
+      "title": "Trade Tracker",
+      "description": "Automates the process to track your profits and losts in trading.\nCurrent extension is integrated with API tsarcade.com\nIMPORTANT: This extension shares with the webapp legacyhabbo.me the following data of your Habbo\n- Your Username\n-The Server you are playing at (com, es, br)\n- Your Trades (items, quantities, who you traded with)\nIf you want your data deleted, please contact me through discord (thauan0x).",
+      "authors": [
+        {
+          "name": "Erotico",
+          "discord": "thauan0x"
+        }
+      ],
+      "version": "2.0",
+      "categories": [
+        "Usability",
+        "Trading"
+      ],
+      "source": "https://github.com/thauanvargas/arcade-tracker/",
+      "readme": "https://github.com/thauanvargas/arcade-tracker/blob/master/README.md",
+      "releases": "https://github.com/thauanvargas/arcade-tracker/releases",
+      "stable": true,
+      "framework": {
+        "name": "GoEarth",
+        "version": "0.4.0"
+      },
+      "language": "Go",
+      "commands": {
+        "default": [
+          "cmd",
+          "/C",
+          "arcade-tracker.exe",
+          "-c",
+          "{cookie}",
+          "-p",
+          "{port}",
+          "-f",
+          "{filename}"
+        ],
+        "windows": [
+          "cmd",
+          "/C",
+          "arcade-tracker-win.exe",
+          "-c",
+          "{cookie}",
+          "-p",
+          "{port}",
+          "-f",
+          "{filename}"
+        ],
+        "mac": [
+          "/bin/sh",
+          "-c",
+          "chmod +x arcade-tracker-mac && ./arcade-tracker-mac -p \"$1\" -c \"$2\" -f \"$3\"",
+          "--",
+          "{port}",
+          "{cookie}",
+          "{filename}"
+        ],
+        "linux": [
+          "/bin/sh",
+          "-c",
+          "chmod +x arcade-tracker-linux && ./arcade-tracker-linux -p \"$1\" -c \"$2\" -f \"$3\"",
+          "--",
+          "{port}",
+          "{cookie}",
+          "{filename}"
+        ]
+      },
+      "compatibility": {
+        "systems": [
+          "Windows",
+          "Mac",
+          "Linux"
+        ],
+        "clients": [
+          "Origins"
+        ]
+      },
+      "submissionDate": "24-10-2024 10:00:00",
+      "updateDate": "13-12-2024 09:30:00",
+      "isOutdated": false
+    },
+    "discordMessages": [
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1302285074284281938",
+        "extVersion": "1.1",
+        "type": "publish",
+        "timestamp": 1730559357389,
+        "locked": false,
+        "score": 80
+      },
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1317066360802512987",
+        "extVersion": "2.0",
+        "type": "update",
+        "timestamp": 1734083490755,
+        "locked": false,
+        "score": 0
+      }
+    ],
+    "latestEmbed": 1734083490755
+  },
+  {
+    "title": "Q-Wired-Page",
+    "version": "1.0",
+    "_object": {
+      "title": "Q-Wired-Page",
+      "description": "Removes the parent variable menu item and adds the children to the Wired menu.",
+      "authors": [
+        {
+          "name": "MrGeneralQ",
+          "hotel": ".nl",
+          "username": "MrGeneralQ",
+          "discord": "mrgeneralq"
+        }
+      ],
+      "version": "1.0",
+      "categories": [
+        "Usability"
+      ],
+      "source": "https://github.com/mrgeneralq/Q-wired-page",
+      "readme": "https://github.com/mrgeneralq/Q-wired-page/blob/main/README.md",
+      "releases": "https://github.com/mrgeneralq/Q-wired-page/releases",
+      "stable": true,
+      "framework": {
+        "name": "Native",
+        "version": "1.5.3"
+      },
+      "language": "Java",
+      "commands": {
+        "default": [
+          "java",
+          "-jar",
+          "QWiredPage.jar",
+          "-c",
+          "{cookie}",
+          "-p",
+          "{port}",
+          "-f",
+          "{filename}"
+        ]
+      },
+      "compatibility": {
+        "systems": [
+          "Linux",
+          "Windows",
+          "Mac"
+        ],
+        "clients": [
+          "Flash"
+        ]
+      },
+      "submissionDate": "23-01-2025 17:30:00",
+      "updateDate": "23-01-2025 17:30:00",
+      "isOutdated": false
+    },
+    "discordMessages": [
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1332029498404896929",
+        "extVersion": "1.0",
+        "type": "publish",
+        "timestamp": 1737650980698,
+        "locked": false,
+        "score": 140
+      }
+    ],
+    "latestEmbed": 1737650980698
+  },
+  {
+    "title": "Robosort",
+    "version": "1.1.1",
+    "_object": {
+      "title": "Robosort",
+      "description": "Sort your wired stacks (automatically).",
+      "authors": [
+        {
+          "name": "Roboroads",
+          "hotel": ".nl",
+          "username": "Roboroads",
+          "discord": "roboroads",
+          "twitter": "RoboroadsHabbo"
+        }
+      ],
+      "version": "1.1.1",
+      "categories": [
+        "Building"
+      ],
+      "source": "https://github.com/Roboroads/Robosort",
+      "readme": "https://github.com/Roboroads/Robosort/blob/main/README.md",
+      "releases": "https://github.com/Roboroads/Robosort/releases",
+      "stable": true,
+      "framework": {
+        "name": "Native",
+        "version": "1.5.4-beta-10"
+      },
+      "language": "Java",
+      "commands": {
+        "default": [
+          "java",
+          "-jar",
+          "Robosort.jar",
+          "-c",
+          "{cookie}",
+          "-p",
+          "{port}",
+          "-f",
+          "{filename}"
+        ]
+      },
+      "compatibility": {
+        "systems": [
+          "Linux",
+          "Windows",
+          "Mac"
+        ],
+        "clients": [
+          "Flash"
+        ]
+      },
+      "submissionDate": "27-02-2025 22:57:25",
+      "updateDate": "11-03-2025 12:35:34",
+      "isOutdated": false
+    },
+    "discordMessages": [
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1345002385826779186",
+        "extVersion": "1.0.0",
+        "type": "publish",
+        "timestamp": 1740743958165,
+        "locked": false,
+        "score": 120
+      },
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1345069194122629220",
+        "extVersion": "1.0.1",
+        "type": "update",
+        "timestamp": 1740759886432,
+        "locked": false,
+        "score": 25
+      },
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1346658491682783303",
+        "extVersion": "1.1.0",
+        "type": "update",
+        "timestamp": 1741138804635,
+        "locked": false,
+        "score": 75
+      },
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1349039377602314362",
+        "extVersion": "1.1.1",
+        "type": "update",
+        "timestamp": 1741706451977,
+        "locked": false,
+        "score": 75
+      }
+    ],
+    "latestEmbed": 1741706451977
+  },
+  {
+    "title": "G-Midi",
+    "version": "1.0",
+    "_object": {
+      "title": "G-Midi",
+      "description": "Play .midi files on 37-key pianos \n\nAutomatically plays piano notes from the uploaded MIDI file",
+      "authors": [
+        {
+          "name": "-Yıldırım",
+          "hotel": ".com.tr",
+          "username": "-Yıldırım",
+          "discord": "yildirimmmmmm",
+          "twitter": "HabboYildirim"
+        }
+      ],
+      "version": "1.0",
+      "categories": [
+        "Fun",
+        "Others"
+      ],
+      "source": "https://github.com/yildirimmmm/G-Midi",
+      "readme": "https://github.com/yildirimmmm/G-Midi#readme",
+      "stable": true,
+      "framework": {
+        "name": "G-Node",
+        "version": "0.2.18"
+      },
+      "language": "Node.js",
+      "commands": {
+        "default": [
+          "java",
+          "-jar",
+          "NodeExtensionSetup.jar",
+          "-npm",
+          "start",
+          "-v",
+          "15.0.0",
+          "-c",
+          "{cookie}",
+          "-p",
+          "{port}",
+          "-f",
+          "{filename}"
+        ]
+      },
+      "compatibility": {
+        "systems": [
+          "Windows",
+          "Linux",
+          "Mac"
+        ],
+        "clients": [
+          "Flash"
+        ]
+      },
+      "submissionDate": "21-03-2025 21:58:00",
+      "updateDate": "21-03-2025 21:58:00",
+      "isOutdated": false
+    },
+    "discordMessages": [
+      {
+        "channelId": "878094299403788330",
+        "guildId": "744927320871010404",
+        "messageId": "1353074709322797139",
+        "extVersion": "1.0",
+        "type": "publish",
+        "timestamp": 1742668550168,
+        "locked": false,
+        "score": 140
+      }
+    ],
+    "latestEmbed": 1742668550168
   }
 ]
