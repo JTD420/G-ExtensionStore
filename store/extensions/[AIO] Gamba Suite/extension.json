@@ -5,11 +5,11 @@
     {
       "name": "JTD",
       "hotel": ".com",
-      "username": "JTD",
+      "username": "@JTD420",
       "discord": "jtd420"
     }
   ],
-  "version": "2.0.1",
+  "version": "2.1.0",
   "categories": ["Usability"],
 
   "source": "https://github.com/JTD420/Gamba-Suite/tree/main",
@@ -45,15 +45,23 @@
       "{port}",
       "-f",
       "{filename}"
-    ]
+    ],
+    "mac": [
+      "/bin/sh", 
+      "-c", 
+      "chmod +x G-itemViewer-mac && ./G-itemViewer-mac -p \"$1\" -c \"$2\" -f \"$3\"",
+       "--", 
+       "{port}", 
+       "{cookie}", 
+       "{filename}"]
   },
 
   "compatibility": {
-    "systems": ["Windows"],
-    "clients": ["Origins"]
+    "systems": ["Windows", "Mac"],
+    "clients": ["Origins", "Flash"]
   },
 
   "submissionDate": "29-08-2024 23:55:00",
-  "updateDate": "27-09-2024 18:36:00",
+  "updateDate": "02-04-2025 18:39:00",
   "isOutdated": false
 }
