@@ -49,7 +49,7 @@
     "mac": [
       "/bin/sh", 
       "-c", 
-      "chmod +x G-itemViewer-mac && ./G-itemViewer-mac -p \"$1\" -c \"$2\" -f \"$3\"",
+      "chmod +x Gamba-Suite-mac && ./Gamba-Suite-mac -p \"$1\" -c \"$2\" -f \"$3\"",
        "--", 
        "{port}", 
        "{cookie}", 
@@ -62,6 +62,6 @@
   },
 
   "submissionDate": "29-08-2024 23:55:00",
-  "updateDate": "02-04-2025 18:39:00",
+  "updateDate": "20-04-2025 17:02:00",
   "isOutdated": false
 }
